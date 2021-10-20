@@ -1,0 +1,24 @@
+.pokemon-list > div {
+  padding: 2rem 6rem;
+
+}
+
+.pokemon-list > div > div  {
+  display: grid;
+grid-template-columns: 0.1fr 1fr 0.1fr;
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+
+.pokemon-list > div > div > img {
+  width: 4rem;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+}
+
+.card {
+  justify-self: center;
+}
