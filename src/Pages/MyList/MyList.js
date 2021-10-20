@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { getPokemonList } from './action';
 import './style.css';
 import Button from "../../component/button/Button";
-
+import { Link } from "react-router-dom";
 export default function MyList() {
   const dispatch = useDispatch();
   const { data } = useSelector(s => s.myList);
@@ -24,6 +24,7 @@ export default function MyList() {
   return(
     <section className='myList'>
       <h3>Your Pokemon Collection</h3>
+      <Link to='/'>Home</Link>
       <Card data={data} />
     </section>
   )

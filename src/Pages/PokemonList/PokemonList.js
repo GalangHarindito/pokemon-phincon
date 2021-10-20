@@ -9,6 +9,7 @@ import icNext from "../../assets/ic-arrow-right.svg";
 import queryString from "querystring";
 import { useHistory, useLocation } from "react-router";
 import DetailPokemon from "../DetailPokemon";
+import { Link } from "react-router-dom";
 
 export default function PokemonList() {
   const dispatch = useDispatch();
@@ -41,6 +42,7 @@ export default function PokemonList() {
     <section className='pokemon-list'>
       <div>
         <h3>Let's Find Your Pokemon</h3>
+        <Link to='/'>Home</Link>
         <br />
         <p>Total pokemon = {dataCount}</p>
         <div>
